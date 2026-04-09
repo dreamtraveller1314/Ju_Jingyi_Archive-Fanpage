@@ -22,6 +22,7 @@ body {
     --soft-bg:    #fff8f8;
     --text-dark:  #2d2d2d;
     --text-light: #888888;
+    --brown:      #8b5e3c;
 }
 
 #overview {
@@ -245,7 +246,7 @@ body {
 .slider-wrapper h3 {
     font-family: 'Chewy', cursive;
     font-size: 30px;
-    color: var(--text-dark);
+    color: var(--brown);
     margin-bottom: 20px;
 }
 
@@ -342,14 +343,6 @@ body {
 .film-more {
     display: flex;
     justify-content: center;
-    align-items: center;
-
-.film-more .work-info {
-    padding: 0;
-    margin: 0;
-    height: 100%;  
-    display: flex;
-    justify-content: center; 
     align-items: center;
 }
 
