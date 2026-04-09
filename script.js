@@ -19,3 +19,14 @@ lightbox.addEventListener('click', function(e) {
         lightbox.classList.remove('active');
     }
 });
+
+function moveSlider(sliderId, direction) {
+    const slider = document.getElementById(sliderId);
+    const scrollAmount = 300; 
+    
+    if (direction === 1) {
+        slider.scrollLeft += scrollAmount;
+    } else {
+        slider.scrollLeft -= scrollAmount;
+    }
+}
