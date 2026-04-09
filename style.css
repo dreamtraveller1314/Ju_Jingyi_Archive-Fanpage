@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff8f8;
+    color: #2d2d2d;
+}
+
+:root {
+    --pink-light: #fce4ec;
+    --pink-mid:   #f48fb1;
+    --pink-dark:  #c2185b;
+    --gold:       #c9a84c;
+    --white:      #ffffff;
+    --soft-bg:    #fff8f8;
+    --text-dark:  #2d2d2d;
+    --text-light: #888888;
+}
+
+#overview {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff0f5 0%, #fce4ec 50%, #fdf6e3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 8%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 520px;
+    z-index: 2;
+    padding: 4rem 0;
+}
+
+.hero-label {
+    font-family: 'Chewy', cursive;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 60px;
+}
+
+.hero-name {
+    font-family: 'Rubik Spray Paint', cursive;
+    font-size: 72px;
+    font-weight: 300;
+    color: var(--text-dark);
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.hero-bio {
+    font-family: 'Rubik Spray Paint', cursive;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555555;
+    margin-bottom: 32px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0; 
+    line-height: 0;
+}
+
+.hero-image img {
+    display: block;
+    height: 100vh;
+    width: auto;
+    max-height: 100vh;
+    object-fit: contain;
+    object-position: bottom right;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease 0.3s forwards;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
