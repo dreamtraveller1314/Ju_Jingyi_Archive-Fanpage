@@ -366,3 +366,46 @@ body {
     border-color: var(--gold);
     transform: scale(1.1);
 }
+
+#music {
+    padding: 100px 8%;
+    background: linear-gradient(180deg, #fff8f8 0%, #fce4ec 100%);
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    background: white;
+    padding: 60px 40px; 
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05); 
+    margin: 0 auto;
+}
+
+.spotify-btn {
+    font-family: 'Chewy', cursive;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1DB954;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.spotify-btn:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .music-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
