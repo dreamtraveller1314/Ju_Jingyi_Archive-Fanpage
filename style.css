@@ -311,8 +311,8 @@ body {
 }
 
 .slider-wrapper {
-    background-color: #fffafa;
-    border: 1px solid #fce4ec;
+    background-color: var(--soft-bg);
+    border: 1px solid var(--pink-light);
     border-radius: 30px;
     padding: 40px;
     margin: 20px 0 50px 0;
@@ -324,8 +324,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
-    border: 1px solid #fce4ec; 
+    background-color: var(--white);
+    border: 1px solid var(--pink-light); 
     border-radius: 30px;
     padding: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -472,3 +472,54 @@ body {
 @media (max-width: 600px) {
     .performances-grid { grid-template-columns: 1fr; }
 }
+
+#fanworks {
+    padding: 80px 8%;
+    background-color: var(--pink-light);
+}
+
+.fan-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fan-card {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: white;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid var(--pink-mid);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+
+.fan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(244, 143, 177, 0.2);
+    border-color: var(--pink-mid);
+}
+
+.fan-content h3 {
+    font-family: 'Chewy', cursive;
+    color: var(--pink-dark);
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.fan-content p {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+.fan-card.official { 
+    grid-column: span 2;
+    border-left: 5px solid #ffd700; 
+}
+.fan-card.game { border-left: 5px solid #ff80ab; }
+.fan-card.video { border-left: 5px solid #ace6ff; }
