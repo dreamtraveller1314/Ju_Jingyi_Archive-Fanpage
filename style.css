@@ -523,3 +523,95 @@ body {
 }
 .fan-card.game { border-left: 5px solid #ff80ab; }
 .fan-card.video { border-left: 5px solid #ace6ff; }
+
+#moreabout {
+    padding: 80px 8%;
+    background-color: #fff;
+}
+
+.hub-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hub-column {
+    flex: 1;
+    min-width: 300px;
+    background: #fffafa;
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid #fce4ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.hub-column h3 {
+    font-family: 'Chewy', cursive;
+    color: var(--pink-dark);
+    font-size: 22px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hub-column h3 i {
+    margin-right: 10px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hub-column:nth-child(3) .link-list {
+    flex-direction: column;
+    align-items: center; 
+    gap: 12px;
+}
+
+.link-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.link-icon:hover {
+    transform: scale(1.15);
+}
+
+.hub-column:nth-child(3) .link-list li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 16px;
+    font-family: 'Chewy', cursive;
+    transition: 0.3s;
+}
+
+.hub-column:nth-child(3) .link-list li a:hover {
+    color: var(--pink-mid);
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    .hub-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hub-column {
+        width: 100%;
+    }
+}
